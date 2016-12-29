@@ -1,0 +1,23 @@
+﻿<Window x:Class="AutoClick.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525" 
+         Background="Transparent" 
+        AllowsTransparency="True"
+        WindowStyle="None" MouseDown="Window_MouseDown"
+        Topmost="True">
+    <Border BorderThickness="1" CornerRadius="1" BorderBrush="Black">
+        <StackPanel Margin="0">
+            <Grid Background="White" Height="130">
+                <TextBox x:Name="ClickCount" HorizontalAlignment="Left" Height="23" Margin="91,78,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" Width="137" TextChanged="TextBox_TextChanged"/>
+                <TextBlock HorizontalAlignment="Left" Margin="29,78,0,0" TextWrapping="Wrap" Text="Count" VerticalAlignment="Top"/>
+                <TextBlock HorizontalAlignment="Left" Margin="29,38,0,0" TextWrapping="Wrap" Text="HotKey: ALT-NUM0" VerticalAlignment="Top"/>
+            </Grid>
+            <Border BorderBrush="White" BorderThickness="10" Height="220">
+                <Border BorderBrush="#FFAAAAAA" BorderThickness="1"/>
+            </Border>
+        </StackPanel>
+    </Border>
+
+
+</Window>
